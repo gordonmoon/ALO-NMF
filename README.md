@@ -32,7 +32,7 @@ For example, `./nmf -est_nmf_cpu -K 64 -tile_size 8 -data ../20newsgroups.txt -m
 - `K`: Low rank
 - `tile_size`: Tile size `T`. Given any `K` value, the tile size `T` needs to be one of the factors of `K` (e.g., when `K` = 64, candidate `T` values are 1, 2, 4, 8, 16, 32 and 64). The code will be updated to use an arbitrary tile size.
 - `data`: Non-negative input matrix `A`
-- `matrix_type`: type of matrix `A`. 1 - Dense matrix, 2 - Sparse matrix
+- `matrix_type`: Type of matrix `A`. 1 - Dense matrix, 2 - Sparse matrix
 - `V`: Number of rows in `A`
 - `D`: Number of columns in `A`
 - `niters`: Number of iterations
