@@ -21,18 +21,18 @@ export OMP_NUM_THREADS=48
 ```
 
 ## BASH script options
-- {K}: Low rank 'K'
-- {tile_size}: tile size 'T'
-- {data}: input matrix 'A'
-- {matrix_type}: type of input matrix 'A'. 1 - Dense matrix, 2 - Sparse matrix
-- {V}:
-- {D}:
-- {niters}: number of iterations
+- {K}: Low rank
+- {tile_size}: Tile size 'T'
+- {data}: Non-negative input matrix 'A'
+- {matrix_type}: type of 'A'. 1 - Dense matrix, 2 - Sparse matrix
+- {V}: Number of rows in 'A'
+- {D}: Number of columns in 'A'
+- {niters}: Number of iterations
 
 ## Run the codes
 To run the program, type the following command in each directory:
-  + Run ALO-NMF CPU: `./run_nmf_hals_cpu.sh`
-  + Run ALO-NMF GPU: `./run_nmf_hals_gpu.sh`
+  + Run ALO-NMF CPU: `./run_alo_nmf_cpu.sh`
+  + Run ALO-NMF GPU: `./run_alo_nmf_gpu.sh`
   
 ## Citation
 If you use ALO-NMF in a scientific publication, we would appreciate citations to the following paper:
