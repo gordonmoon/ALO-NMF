@@ -8,8 +8,8 @@ The C++ and CUDA implementations of **ALO-NMF** described in the paper titled, "
 - OpenMP (No separated installation is needed once Intel compiler is installed)
 - MKL (The latest version "16.0.0 or higher" is preferred as it has been improved significantly in recent years)
   
-## Prepare datasets
-Download sample datasets: `./data.sh`
+## Prepare data
+Download sample matrices: `./data.sh`
 
 ## Compile the codes
 Type the following command in each directory: `make clean` and `make`
@@ -21,9 +21,9 @@ export OMP_NUM_THREADS=48
 ```
 
 ## BASH script options
-Change the options in `./run_alo_nmf_cpu.sh` and `./run_alo_nmf_gpu.sh`
+Specify the options in `./run_alo_nmf_cpu.sh` and `./run_alo_nmf_gpu.sh`
 - {K}: Low rank
-- {tile_size}: Tile size 'T'
+- {tile_size}: Tile size 'T', given a 'K' value, the tile size 'T' needs to be one of the factors of K (e.g., when K = 64, possible T values are 1, 2, 4, 8, 16, 32 and 64). The code will be updated to use an arbitrary tile size.
 - {data}: Non-negative input matrix 'A'
 - {matrix_type}: type of 'A'. 1 - Dense matrix, 2 - Sparse matrix
 - {V}: Number of rows in 'A'
@@ -31,12 +31,19 @@ Change the options in `./run_alo_nmf_cpu.sh` and `./run_alo_nmf_gpu.sh`
 - {niters}: Number of iterations
 
 ## Run the codes
-Type the following command in each directory:
-  + Run ALO-NMF CPU: `./run_alo_nmf_cpu.sh`
-  + Run ALO-NMF GPU: `./run_alo_nmf_gpu.sh`
+  + Run ALO-NMF CPU:
+  ```
+  cd ALO-NMF_CPU
+  ./run_alo_nmf_cpu.sh
+  ```
+  + Run ALO-NMF GPU:
+  ```
+  cd ALO-NMF_GPU
+  ./run_alo_nmf_gpu.sh
+  ```
   
 ## Citation
-If you use ALO-NMF in a scientific publication, we would appreciate citations to the following paper:
+If you use this ALO-NMF in your own work, please cite our paper as follows:
 ```
 @inproceedings{moon2020alo,
   title={ALO-NMF: Accelerated Locality-Optimized Non-negative Matrix Factorization},
