@@ -1,0 +1,7 @@
+#ifndef _CONSTANTS_H
+#define _CONSTANTS_H
+
+#define MODEL_STATUS_UNKNOWN 0
+#define MODEL_STATUS_ALO_NMF_CPU 1
+
+#endif
