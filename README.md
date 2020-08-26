@@ -9,10 +9,10 @@ The C++ and CUDA implementations of **ALO-NMF** described in the paper titled, "
 - MKL (The latest version "16.0.0 or higher" is preferred as it has been improved significantly in recent years)
   
 ## Prepare datasets
-Download datasets: `./data.sh`
+Download sample datasets: `./data.sh`
 
 ## Compile the codes
-To compile the program, type the following command in each directory: `make clean` and `make`
+Type the following command in each directory: `make clean` and `make`
 
 ## Runtime usage
 ```
@@ -21,6 +21,7 @@ export OMP_NUM_THREADS=48
 ```
 
 ## BASH script options
+Change the options in `./run_alo_nmf_cpu.sh` and `./run_alo_nmf_gpu.sh`
 - {K}: Low rank
 - {tile_size}: Tile size 'T'
 - {data}: Non-negative input matrix 'A'
@@ -30,7 +31,7 @@ export OMP_NUM_THREADS=48
 - {niters}: Number of iterations
 
 ## Run the codes
-To run the program, type the following command in each directory:
+Type the following command in each directory:
   + Run ALO-NMF CPU: `./run_alo_nmf_cpu.sh`
   + Run ALO-NMF GPU: `./run_alo_nmf_gpu.sh`
   
