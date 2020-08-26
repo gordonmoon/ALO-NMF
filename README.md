@@ -14,6 +14,21 @@ Download datasets: `./data.sh`
 ## Compile the codes
 To compile the program, type the following command in each directory: `make clean` and `make`
 
+## Runtime usage
+```
+export MKL_NUM_THREADS=48
+export OMP_NUM_THREADS=48
+```
+
+## BASH script options
+- {K}: Low rank 'K'
+- {tile_size}: tile size 'T'
+- {data}: input matrix 'A'
+- {matrix_type}: type of input matrix 'A'. 1 - Dense matrix, 2 - Sparse matrix
+- {V}:
+- {D}:
+- {niters}: number of iterations
+
 ## Run the codes
 To run the program, type the following command in each directory:
   + Run ALO-NMF CPU: `./run_nmf_hals_cpu.sh`
