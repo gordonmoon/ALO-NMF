@@ -27,7 +27,7 @@ export OMP_NUM_THREADS=48
 ## BASH script options
 Specify the options in `./run_alo_nmf_cpu.sh` and `./run_alo_nmf_gpu.sh`
 
-For example, `./nmf -est_nmf_cpu -K 64 -tile_size 8 -data 20newsgroups.txt -matrix_type 2 -V 26214 -D 11314 -niters 100`
+For example, `./nmf -est_nmf_cpu -K 64 -tile_size 8 -data ../20newsgroups.txt -matrix_type 2 -V 26214 -D 11314 -niters 100`
 
 - `K`: Low rank
 - `tile_size`: Tile size `T`. Given any `K` value, the tile size `T` needs to be one of the factors of `K` (e.g., when `K` = 64, candidate `T` values are 1, 2, 4, 8, 16, 32 and 64). The code will be updated to use an arbitrary tile size.
