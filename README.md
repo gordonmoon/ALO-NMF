@@ -21,11 +21,12 @@ To run the program, type the following command in each directory:
   
 ## Citation
 If you use ALO-NMF in a scientific publication, we would appreciate citations to the following paper:
-`@inproceedings{moon2020alo,
+```
+@inproceedings{moon2020alo,
   title={ALO-NMF: Accelerated Locality-Optimized Non-negative Matrix Factorization},
   author={Moon, Gordon E and Ellis, J Austin and Sukumaran-Rajam, Aravind and Parthasarathy, Srinivasan and Sadayappan, P},
   booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
   pages={1758--1767},
   year={2020}
-}`
-
+}
+```
