@@ -25,7 +25,7 @@ export OMP_NUM_THREADS=48
 ```
 
 ## BASH script options
-Specify the options in `./run_alo_nmf_cpu.sh` and `./run_alo_nmf_gpu.sh`
+Specify the options in `ALO-NMF_CPU/run_alo_nmf_cpu.sh` and `ALO-NMF_GPU/run_alo_nmf_gpu.sh`
 
 For example, `./nmf -est_nmf_cpu -K 64 -tile_size 8 -data ../20newsgroups.txt -matrix_type 2 -V 26214 -D 11314 -niters 100`
 
