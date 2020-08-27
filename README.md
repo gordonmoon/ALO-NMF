@@ -30,7 +30,7 @@ Specify the options in `ALO-NMF_CPU/run_alo_nmf_cpu.sh` and `ALO-NMF_GPU/run_alo
 For example, `./nmf -est_nmf_cpu -K 64 -tile_size 8 -data ../20newsgroups.txt -matrix_type 2 -V 26214 -D 11314 -niters 100`
 
 - `K`: Low rank
-- `tile_size`: Tile size T. Given any low rank K value, the tile size T needs to be one of the factors of K (e.g., when K = 64, candidate T values are 1, 2, 4, 8, 16, 32 and 64). We plan to update the code to use an arbitrary tile size.
+- `tile_size`: Tile size T. Given any low rank K value, the tile size T needs to be one of the factors of K (e.g., when K = 64, feasible T values are 1, 2, 4, 8, 16, 32 and 64). We plan to update the code to use an arbitrary tile size.
 - `data`: Non-negative input matrix A
 - `matrix_type`: Type of matrix A. 1 - Dense matrix, 2 - Sparse matrix
 - `V`: Number of rows in A
