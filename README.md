@@ -11,8 +11,8 @@ The C++ and CUDA implementations of **ALO-NMF** described in the paper titled, "
 ## Data
 Download sample sparse and dense matrices: `./data.sh`
 
-## Compile the codes
-Type the following commands in both `ALO-NMF_CPU` and `ALO-NMF_GPU` directories.
+## Compile the programs
+Type the following commands in both `ALO-NMF_CPU` and `ALO-NMF_GPU` directories
 ```
 make clean
 make 
