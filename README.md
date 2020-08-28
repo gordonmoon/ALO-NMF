@@ -9,7 +9,7 @@ The C++ and CUDA implementations of **ALO-NMF** described in the paper titled, "
 - MKL (The latest version "16.0.0 or higher" is preferred as it has been improved significantly in recent years)
   
 ## Data
-Download sample sparse and dense matrices: `./data.sh`
+Download sample sparse and dense non-negative matrices: `./data.sh`
 
 ## Build
 To compile the codes, type the following commands in both `ALO-NMF_CPU` and `ALO-NMF_GPU` directories
